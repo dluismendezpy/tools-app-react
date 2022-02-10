@@ -5,6 +5,7 @@ import HomeScreen from "./screens/Home";
 import DetailScreen from "./screens/Details";
 import CalculatorScreen from "./screens/Calculator";
 import ToLetterScreen from "./screens/ToLetter";
+import MultiplicationTableScreen from "./screens/MultiplicationTable";
 
 window.convertir = require("numero-a-letras");
 
@@ -26,13 +27,18 @@ const MyApp = () => {
         />
         <Stack.Screen
           name="Calculator"
-          options={{ title: "Sumadora" }}
+          options={{ title: "Calculadora" }}
           component={CalculatorScreen}
         />
         <Stack.Screen
           name="ToLetter"
           options={{ title: "Numero a letra" }}
           component={ToLetterScreen}
+        />
+        <Stack.Screen
+          name="MultiplicationTable"
+          options={{ title: "Tabla de multiplicacion" }}
+          component={MultiplicationTableScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -12,7 +12,7 @@ const Home = ({ navigation }) => (
     <View>
       <Button
         onPress={() => navigation.navigate("Calculator")}
-        title="Sumadora"
+        title="Calculadora"
       />
     </View>
     <Separator />
@@ -20,6 +20,13 @@ const Home = ({ navigation }) => (
       <Button
         onPress={() => navigation.navigate("ToLetter")}
         title="Numero a letra"
+      />
+    </View>
+    <Separator />
+    <View>
+      <Button
+        onPress={() => navigation.navigate("MultiplicationTable")}
+        title="Tabla de multiplicacion"
       />
     </View>
   </SafeAreaView>
