@@ -15,6 +15,13 @@ const Home = ({ navigation }) => (
         title="Sumadora"
       />
     </View>
+    <Separator />
+    <View>
+      <Button
+        onPress={() => navigation.navigate("ToLetter")}
+        title="Numero a letra"
+      />
+    </View>
   </SafeAreaView>
 );
 

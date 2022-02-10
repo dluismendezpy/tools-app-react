@@ -1,33 +1,24 @@
 import React, { useState } from "react";
 import { View, TextInput, Text, StyleSheet, Button, Alert } from "react-native";
 
-const Calculator = () => {
-  let [n1, setN1] = useState(0);
-  let [n2, setN2] = useState(0);
-  let suma = n1 + n2;
+const ToLetter = () => {
+  let [conversion, setConversion] = useState(0);
 
   return (
     <View style={styles.container}>
-      <Text>Primer numero</Text>
+      <Text>Introduce un numero</Text>
       <TextInput
         style={styles.input}
         placeholder="num1"
         keyboardType="numeric"
-        onChangeText={(val) => setN1(parseInt(val))}
+        onChangeText={(val) => setConversion(parseInt(val))}
       />
-
-      <Text>Segundo numero</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="num2"
-        keyboardType="numeric"
-        onChangeText={(val) => setN2(parseInt(val))}
-      />
-
       <View>
         <Button
-          onPress={() => Alert.alert("Suma", `La suma es igual a ${suma}`)}
-          title="Sumar"
+          onPress={() =>
+            Alert.alert("Conversion", `${convertir.NumerosALetras(conversion)}`)
+          }
+          title="Convertir"
         />
       </View>
     </View>
@@ -50,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Calculator;
+export default ToLetter;
