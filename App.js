@@ -4,6 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./screens/Home";
 import DetailScreen from "./screens/Details";
 import CalculatorScreen from "./screens/Calculator";
+import ToLetterScreen from "./screens/ToLetter";
+
+window.convertir = require("numero-a-letras");
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +28,11 @@ const MyApp = () => {
           name="Calculator"
           options={{ title: "Sumadora" }}
           component={CalculatorScreen}
+        />
+        <Stack.Screen
+          name="ToLetter"
+          options={{ title: "Numero a letra" }}
+          component={ToLetterScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
