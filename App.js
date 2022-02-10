@@ -16,8 +16,16 @@ const MyApp = () => {
           component={HomeScreen}
           options={{ title: "Inicio" }}
         />
-        <Stack.Screen name="Detail" component={DetailScreen} />
-        <Stack.Screen name="Calculator" component={CalculatorScreen} />
+        <Stack.Screen
+          name="Detail"
+          options={{ title: "Sobre mi" }}
+          component={DetailScreen}
+        />
+        <Stack.Screen
+          name="Calculator"
+          options={{ title: "Sumadora" }}
+          component={CalculatorScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
