@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "build": "expo build:android"
+    "build": "expo build:android",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
