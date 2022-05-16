@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  TextInput,
-  Text,
-  StyleSheet,
-  Button,
-  Alert,
-} from "react-native";
+import { View, TextInput, Text, StyleSheet, Button, Alert } from "react-native";
 
 const MultiplicationTable = () => {
   let result = [];
@@ -15,7 +8,6 @@ const MultiplicationTable = () => {
   for (let i = 1; i <= 13; i++) {
     num = conversion * i;
     result.push(`${conversion} X ${i} = ${num}\n`);
-    
   }
 
   return (
